@@ -1,0 +1,51 @@
+// compress:true
+
+@import "vars";
+
+html {
+    font-size: 15px;
+    height: 100%;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    background: white;
+    background-size: cover;
+    color: black;
+    height: 100%;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0 0 0.8rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+// Blocks
+
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/info";
+@import "blocks/main";
+@import "blocks/footer";
+@import "blocks/history";
+@import "blocks/infrastructure";
+@import "blocks/culture";
+@import "blocks/aboutus";
+@import "blocks/contact";

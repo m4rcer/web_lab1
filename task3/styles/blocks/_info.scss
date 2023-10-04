@@ -1,0 +1,100 @@
+.info {
+    &__block {
+        margin-bottom: 40px;
+
+        &__title {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid lightgray;
+        }
+
+        &__content {
+            display: flex;
+
+            &__img {
+                margin-right: 30px;
+                display: flex;
+                flex-wrap: wrap;
+                width: 40%;
+
+                &>img {
+                    border-radius: 30px;
+                    display: block;
+                    width: 100%;
+                }
+            }
+
+            &__text {
+                line-height: 1.5;
+                font-size: 20px;
+                width: 60%;
+            }
+
+            &.photo {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            &.news {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &--photo {
+                width: 32%;
+                margin-bottom: 20px;
+
+                &>img {
+                    border-radius: 30px;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            &--news {
+                margin-bottom: 40px;
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 15px;
+                border-bottom: 2px solid lightgrey;
+
+                &:last-child {
+                    border-bottom: 0;
+                    padding: 0;
+                }
+                
+
+                &__preview {
+                    width: 40%;
+                    margin-right: 30px;
+
+                    &>img {
+                        border-radius: 30px;
+                    }
+                }
+
+                &__content {
+                    width: 60%;
+                    display: flex;
+                    flex-direction: column;
+
+                    &--title {
+                        font-size: 25px;
+                        font-weight: 700;
+                        padding-bottom: 10px;
+                        border-bottom: 2px solid lightgrey;
+                        margin-bottom: 20px;
+                    }
+
+                    &--text {
+                        font-size: 20px;
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
+    }
+}

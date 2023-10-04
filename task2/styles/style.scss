@@ -1,0 +1,61 @@
+// compress:true
+
+@import "vars";
+
+html {
+    font-size: 15px;
+    height: 100%;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    background: white;
+    background-size: cover;
+    color: black;
+    height: 100%;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0 0 0.8rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.img {
+    height: 100%;
+    width: auto;
+    aspect-ratio: 20/9;
+    position: relative;
+    margin: 0 auto;
+    background-color: $blue;
+    overflow: hidden;
+}
+
+// Blocks
+
+@import "blocks/bg";
+@import "blocks/first";
+@import "blocks/second";
+@import "blocks/third";
+@import "blocks/fourth";

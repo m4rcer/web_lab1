@@ -1,0 +1,62 @@
+.floor {
+    width: 10000px;
+    height: 10000px;
+    background-color: white;
+    position: absolute;
+    bottom: -9850px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+.mountain {
+    position: absolute;
+    bottom: -100px;
+
+    &.middle {
+        right: 370px;
+        bottom: -256px;
+        z-index: 2;
+
+    }
+
+    &.right {
+        right: -55px;
+        bottom: -100px;
+    }
+
+    &__inner {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        background-color: $green;
+        transform: rotate(45deg);
+        overflow: hidden;
+
+        &.middle {
+            background-color: rgb(40, 109, 52);
+            width: 700px;
+            height: 700px;
+        }
+
+        &__top {
+            width: 250px;
+            height: 250px;
+
+            background-color: white;
+
+            position: absolute;
+            border-radius: 50%;
+            left: -90px;
+            top: -20px;
+
+            &.right {
+                left: 46px;
+                top: -37px;
+                width: 150px;
+                height: 170px;
+            }
+        }
+    }
+}
